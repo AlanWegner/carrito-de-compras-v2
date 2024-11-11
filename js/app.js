@@ -1,6 +1,7 @@
 const carrito = document.querySelector('#carrito');
 const botones = document.querySelectorAll('.btn-primary');
 const template = document.querySelector('#template');
+const fragment = document.createDocumentFragment();
 
 const carritoArray = [];
 
@@ -28,7 +29,11 @@ const mostrarCarrito = () => {
 
         clone.querySelector('.lead').texContent = item.titulo;
         clone.querySelector('.badge').texContent = item.cantidad;
+
+        fragment.appendChild(clone);
     });
+
+    console.log(clone)
 };
 
 botones.forEach((item) => {
