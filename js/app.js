@@ -19,6 +19,11 @@ const agregarProductoAlCarrito = (e) => {
     } else {
         carritoArray[posicion].cantidad++;
     };
+    mostrarCarrito();
+};
+
+const mostrarCarrito = () => {
+    console.log('probando funcion')
 };
 
 botones.forEach((item) => {
