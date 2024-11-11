@@ -3,5 +3,7 @@ const botones = document.querySelectorAll('.btn-primary');
 const template = document.querySelector('#template');
 
 botones.forEach((item) => {
-    console.log(item);
+    item.addEventListener('click', (e) => {
+        console.log('Me diste click');
+    });
 });
