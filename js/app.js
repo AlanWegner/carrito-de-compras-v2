@@ -24,6 +24,9 @@ const agregarProductoAlCarrito = (e) => {
 };
 
 const mostrarCarrito = () => {
+
+    carrito.textContent = '';
+
     carritoArray.forEach((item) => {
         const clone = template.content.cloneNode(true);
 
