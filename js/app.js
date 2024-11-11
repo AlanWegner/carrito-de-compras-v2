@@ -24,7 +24,10 @@ const agregarProductoAlCarrito = (e) => {
 
 const mostrarCarrito = () => {
     carritoArray.forEach((item) => {
-        console.log(item);
+        const clone = template.content.cloneNode(true);
+
+        clone.querySelector('.lead').texContent = item.titulo;
+        clone.querySelector('.badge').texContent = item.cantidad;
     });
 };
 
