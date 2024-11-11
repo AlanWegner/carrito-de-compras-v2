@@ -33,7 +33,7 @@ const mostrarCarrito = () => {
         fragment.appendChild(clone);
     });
 
-    console.log(clone)
+    carrito.appendChild(fragment);
 };
 
 botones.forEach((item) => {
