@@ -12,7 +12,8 @@ const agregarProductoAlCarrito = (e) => {
     };
     const posicion = carritoArray.findIndex((item) => {
         return item.titulo === producto.titulo;
-    })
+    });
+    console.log(posicion);
 };
 
 botones.forEach((item) => {
