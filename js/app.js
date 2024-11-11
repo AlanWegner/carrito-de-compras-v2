@@ -13,7 +13,12 @@ const agregarProductoAlCarrito = (e) => {
     const posicion = carritoArray.findIndex((item) => {
         return item.titulo === producto.titulo;
     });
-    console.log(posicion);
+    
+    if(posicion === -1) {
+        carritoArray.push(producto)
+    } else {
+        carritoArray[posicion].cantidad++;
+    };
 };
 
 botones.forEach((item) => {
