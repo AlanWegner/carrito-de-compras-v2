@@ -10,7 +10,9 @@ const agregarProductoAlCarrito = (e) => {
         id: e.target.dataset.fruta,
         cantidad: 1,
     };
-    console.log(producto)
+    const posicion = carritoArray.findIndex((item) => {
+        return item.titulo === producto.titulo;
+    })
 };
 
 botones.forEach((item) => {
