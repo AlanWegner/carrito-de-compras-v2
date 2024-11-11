@@ -23,7 +23,9 @@ const agregarProductoAlCarrito = (e) => {
 };
 
 const mostrarCarrito = () => {
-    console.log('probando funcion')
+    carritoArray.forEach((item) => {
+        console.log(item);
+    });
 };
 
 botones.forEach((item) => {
