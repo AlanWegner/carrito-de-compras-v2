@@ -5,7 +5,12 @@ const template = document.querySelector('#template');
 const carritoArray = [];
 
 const agregarProductoAlCarrito = (e) => {
-    console.log(e.target.dataset.fruta);
+    const producto = {
+        titulo: e.target.dataset.fruta,
+        id: e.target.dataset.fruta,
+        cantidad: 1,
+    };
+    console.log(producto)
 };
 
 botones.forEach((item) => {
